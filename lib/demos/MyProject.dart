@@ -28,7 +28,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
       ]
       ),
 
-      body: SafeArea(           // araştır 
+      body: SafeArea(       
         child: Column( 
           children: [ 
            Padding(
@@ -40,7 +40,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                 children: [
                 // Hi Jared! (SOL ÜSTTEKİ MESAJ)
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,             // hi, Jared! ve 23 jan 2023 yazısını en sola yaslıyor. YENİ ÖGRENDİM (colm ve container bitince yazdık bunu )
+                  crossAxisAlignment: CrossAxisAlignment.start,             // hi, ! ve 23 jan 2023 yazısını en sola yaslıyor. (colm ve container bitince yazdık bunu )
                   children: [
                     Text('Hi, Mert!',
                      style: TextStyle(
@@ -50,7 +50,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                       ),
                       ),
            
-                      SizedBox(height: 8,),                                // bunu açmamızın sebebi üstteki ve alttaki text in arasına boşluk kolaymak için 
+                      SizedBox(height: 8,),                          
            
                        Text('23 Jan, 2023',
                        style: TextStyle(color: Colors.blue[200]),
@@ -59,12 +59,12 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                 ),
                     
                 // Notification (ÜSTTEKİ ÇAN İCONU)
-                Container(                                                 // önce icon açıp sonra container ile sarmaladık ve  decoration yaptık 
+                Container(                                                 
                   decoration: BoxDecoration(
                     color: Colors.blue[600],
                     borderRadius: BorderRadius.circular(12) 
                    ),
-                    padding: EdgeInsets.all(12),                           // dikkat et padding i container içinde verdik. yani paddik ile sarmalamadık. bu sayede container in içine paddingn vermiş olduk.
+                    padding: EdgeInsets.all(12),                          
                     child: Icon(
                     Icons.notifications ,
                     color: Colors.white,
@@ -73,7 +73,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
               ],    
               ),
               // ****
-              SizedBox(height: 25,),    // search boz ile üstteki yapının arasına boşluk koymak için yaptık
+              SizedBox(height: 25,),    
               // ****
               // SEARCH BAR 
               TextField(
@@ -86,7 +86,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                 ),
                 ), 
            
-                   SizedBox(height: 25,),    // input ile altındaki için boşluk vermek amaçlı
+                   SizedBox(height: 25,),    
            
                   // HOW DO YU FELL ?'
                    Row(
@@ -159,7 +159,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                 // ******
                 // BURASI ALTTAKİ BEYAZ EKRAN YAPIMI. 
                     Expanded(
-                      child: ClipRRect(           // containeri cliprrect ile sarmaladım ve sol ve sağ köşelere padding verdim cliptrecrect bu işe yarıyormuş. border radius açmak için 
+                      child: ClipRRect(          
                         borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)), 
                         child: Container(
                           padding: EdgeInsets.all(25),
@@ -175,7 +175,7 @@ class _MyProjectDemoViewState extends State<MyProjectDemoView> {
                                     Icon(Icons.more_horiz),
                                   ],
                                 ),
-                                // ****                           // BURADA CONTAİNER YAPISI VARDI. YAPIYI BİTİRİNCE EXERCİSE_TİLE.DART SAYFASINA AKTARDIK VE LİSTVİEW AÇARAK EXPENDED İLE SARMALADIK. KISA YOLUNU İSE İÇİNE YAZDIK. (ExerciseTile())
+                                // ****                           
                                  SizedBox(height: 25,),
                                 //  *****
                               
