@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class ExerciseTile extends StatelessWidget {
 
 final icon;
-final String  exercisaName;            // dışardan parametre alıyoruz. 3 adet. icon için text için  ve ikinci text için. ve color için... bu sayede container yapısını 3 defa yazmak yerine 1 defa yazıp. ana projemizde çogaldıp. içine değişiklikler yapıyoruz  BU KONU ÇOK ÖNEMLİ
+final String  exercisaName;          
 final int  exercisaDescription;
 final color;
 
@@ -15,7 +15,7 @@ final color;
 
 
   @override
-  Widget build(BuildContext context) {           // EKRANDAKİ ALTTA BEYAZ ALANIN İÇİNDEKİ CARDLAR BURAYA AKTARDIK. CONTAİNER YAPISI OLARAK. DAHA SONRA PADDİNG İLE SARMALADIK 
+  Widget build(BuildContext context) {          
        return     Padding(
                   padding: const EdgeInsets.only(bottom: 12.0),  
                   child: Container(
@@ -25,7 +25,7 @@ final color;
                   child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                   Row(              // bu row container ile colmn u yan yana getirdi. sobra bu row u tekrar row ile sarmalayıp. bu row un bitimine tekrar icon atadık ve üstteki row a betwen verince 3 nokta sağ tarafa kaydı  (container cliprrect ile sarmalandı araştır.. sanırım bunun sebebi border radius yapabilmek için )
+                   Row(              
                     children: [
                     ClipRRect(
                      borderRadius: BorderRadius.circular(12),
